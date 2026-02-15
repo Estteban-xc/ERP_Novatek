@@ -20,8 +20,7 @@
                     <li><a href="#introduccion">Introducción</a></li>
                     <li><a href="#problema">Problema</a></li>
                     <li><a href="#solucion">Solución</a></li>
-                    <li><a href="#antecedentes">Antecedentes</a></li>
-                    <li><a href="#requisitos">Requisitos</a></li>
+                    <li><a href="#antecedentes">Requerimientos</a></li>
                     <li><a href="#tecnologias">Tecnologías</a></li>
                     <li><a href="#equipo">Equipo</a></li>
                 </ul>
@@ -49,7 +48,7 @@
                 <div class="hero-buttons">
                     <a href="#solucion" class="btn btn-primary">Conocer Más</a>
                     <a href="https://github.com/Estteban-xc/ERP_Novatek" target="_blank" class="btn btn-secondary">GitHub</a>
-                    <a href="https://estebanvarelaumb.atlassian.net/jira/software/projects/EN/boards/102?jql=assignee+%3D+empty&atlOrigin=eyJpIjoiMDMxYmY3YWJhZjNlNGUwNmJhNzJlZjNhN2RkNDM4NjUiLCJwIjoiaiJ9" target="_blank" class="btn btn-tertiary">Jira</a>
+                    <a href="https://estebanvarelaumb.atlassian.net/jira/software/projects/EN/boards/102?atlOrigin=eyJpIjoiNzA4OTM1M2VjZDI4NDVjMGEwYzZhYmQwM2ViNDk4MDkiLCJwIjoiaiJ9" target="_blank" class="btn btn-tertiary">Jira</a>
                 </div>
             </div>
         </div>
@@ -87,16 +86,6 @@
                     <div class="icon">📈</div>
                     <h3>Mejor toma de decisiones</h3>
                     <p>Generación de reportes en tiempo real para evaluar ventas, márgenes y rendimiento.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="icon">🎯</div>
-                    <h3>Personalización específica para productos Apple</h3>
-                    <p>Adaptación a modelos, capacidades, colores y garantías oficiales.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="icon">😊</div>
-                    <h3>Mejora en la experiencia del cliente</h3>
-                    <p>Seguimiento de compras, historial técnico y notificaciones de nuevos lanzamientos.</p>
                 </div>
             </div>
         </div>
@@ -469,7 +458,9 @@
     <!-- Antecedentes -->
     <section id="antecedentes" class="section">
         <div class="container">
-            <h2 class="section-title">Antecedentes</h2>
+            <h2 class="section-title">4. Especificación General de Requerimientos</h2>
+            
+            <h3 class="subsection-title">a. Antecedentes</h3>
             <p>Para el desarrollo del ERP especializado en telefonía móvil Apple, se realizó la investigación de aplicaciones similares disponibles en el mercado que ofrecen funcionalidades de gestión empresarial.</p>
             <p>El objetivo del análisis fue identificar características, módulos disponibles, costos y nivel de adaptación al negocio de telefonía móvil con control por IMEI.</p>
             <p>A continuación, se presenta el cuadro comparativo solicitado:</p>
@@ -533,7 +524,7 @@
     <!-- Requisitos Funcionales -->
     <section id="requisitos" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Requisitos Funcionales</h2>
+            <h2 class="section-title">B. Requisitos Funcionales</h2>
 
             <!-- 1. Gestión de Inventario -->
             <div class="requirement-section">
@@ -682,16 +673,6 @@
                         <p><strong>Como</strong> gerente, <strong>quiero</strong> visualizar ingresos, egresos y márgenes de ganancia, <strong>para que</strong> pueda tomar decisiones estratégicas.</p>
                     </div>
                 </div>
-
-                <div class="user-story">
-                    <h4>6.3 Estadísticas inteligentes (Valor agregado frente a ERP genéricos)</h4>
-                    <div class="story-card">
-                        <p><strong>Como</strong> gerente, <strong>quiero</strong> visualizar estadísticas de productos más vendidos por modelo y capacidad, <strong>para que</strong> pueda optimizar futuras compras.</p>
-                    </div>
-                    <div class="story-card">
-                        <p><strong>Como</strong> administrador, <strong>quiero</strong> recibir alertas de productos con baja rotación, <strong>para que</strong> pueda crear promociones estratégicas.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -699,7 +680,7 @@
     <!-- Requisitos No Funcionales -->
     <section id="requisitos-no-funcionales" class="section">
         <div class="container">
-            <h2 class="section-title">Requisitos No Funcionales</h2>
+            <h2 class="section-title">C. Requisitos No Funcionales</h2>
 
             <div class="nf-requirements-grid">
                 <div class="nf-requirement-card">
@@ -718,7 +699,7 @@
                     <h3>Rendimiento</h3>
                     <div class="nf-content">
                         <h4>Requisito:</h4>
-                        <p>El sistema deberá responder en un tiempo máximo de 2 a 3 segundos en operaciones como:</p>
+                        <p>El sistema deberá responder en un tiempo máximo de 4 a 6 segundos en operaciones como:</p>
                         <ul>
                             <li>Consulta de inventario</li>
                             <li>Registro de ventas</li>
@@ -795,7 +776,7 @@
                     <h3>Respaldo y Recuperación</h3>
                     <div class="nf-content">
                         <h4>Requisito:</h4>
-                        <p>El sistema deberá permitir copias de seguridad automáticas y manuales de la base de datos, así como restauración en caso de fallos.</p>
+                        <p>El sistema deberá permitir copias de seguridad manuales de la base de datos, así como restauración en caso de fallos.</p>
                         <h4>Justificación:</h4>
                         <p>Una pérdida de datos podría generar graves consecuencias financieras. El respaldo protege la información estratégica del negocio.</p>
                     </div>
@@ -804,32 +785,32 @@
         </div>
     </section>
 
-    <!-- Restricciones -->
+    <!-- Alcance del Sistema -->
     <section id="restricciones" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Restricciones del Proyecto</h2>
+            <h2 class="section-title">D. Alcance del Sistema</h2>
 
             <div class="restrictions-grid">
                 <div class="restriction-card">
                     <div class="restriction-header">
                         <span class="restriction-icon">🎯</span>
-                        <h3>3.1 Alcance</h3>
+                        <h3>Alcance</h3>
                     </div>
                     <p>El alcance está definido por el desarrollo de los módulos principales descritos en el documento: Inventario, Ventas, Clientes, Proveedores, Empleados y Reportes.</p>
-                    <p class="restriction-note">Cualquier funcionalidad adicional (por ejemplo, integración con comercio electrónico o facturación electrónica avanzada) implicará ampliación del alcance y posibles ajustes en tiempo y costo.</p>
+                    <p class="restriction-note">Cualquier funcionalidad adicional (por ejemplo, integración con comercio o facturación electrónicos avanzada) implicará ampliación del alcance y posibles ajustes en tiempo y costo.</p>
                 </div>
 
                 <div class="restriction-card">
                     <div class="restriction-header">
                         <span class="restriction-icon">⏱️</span>
-                        <h3>3.2 Tiempo</h3>
+                        <h3>Tiempo</h3>
                     </div>
                     <p>El proyecto deberá desarrollarse dentro del cronograma académico establecido.</p>
                     <p><strong>El tiempo limitado puede restringir:</strong></p>
                     <ul>
-                        <li>Nivel de personalización avanzada</li>
-                        <li>Desarrollo de funcionalidades adicionales</li>
-                        <li>Integraciones externas complejas</li>
+                        <li>Nivel de personalización avanzada.</li>
+                        <li>Desarrollo de funcionalidades adicionales.</li>
+                        <li>Integraciones externas complejas.</li>
                     </ul>
                     <p class="restriction-note">Un aumento en el alcance impactará directamente el tiempo de desarrollo.</p>
                 </div>
@@ -837,14 +818,14 @@
                 <div class="restriction-card">
                     <div class="restriction-header">
                         <span class="restriction-icon">💰</span>
-                        <h3>3.3 Costo</h3>
+                        <h3>Costo</h3>
                     </div>
                     <p><strong>El costo del proyecto incluye:</strong></p>
                     <ul>
-                        <li>Tiempo de desarrollo</li>
-                        <li>Recursos tecnológicos</li>
-                        <li>Implementación y pruebas</li>
-                        <li>Mantenimiento futuro</li>
+                        <li>Tiempo de desarrollo.</li>
+                        <li>Recursos tecnológicos.</li>
+                        <li>Implementación y pruebas.</li>
+                        <li>Mantenimiento futuro.</li>
                     </ul>
                     <p class="restriction-note">Si se desea aumentar el alcance (más módulos, integración web, versión móvil), el costo del proyecto aumentará proporcionalmente.</p>
                 </div>
@@ -855,8 +836,9 @@
     <!-- Tecnologías -->
     <section id="tecnologias" class="section">
         <div class="container">
-            <h2 class="section-title">Tecnologías Seleccionadas</h2>
+            <h2 class="section-title">E. Tecnologías Seleccionadas</h2>
             <p class="intro-text">Para el desarrollo del ERP de escritorio se seleccionaron tecnologías accesibles, estables y adecuadas para un entorno académico y empresarial, priorizando facilidad de desarrollo, mantenimiento y escalabilidad futura.</p>
+            <p class="intro-text"><strong>Mencione los entornos de desarrollo, plataformas y herramientas empleadas en la implementación del sistema.</strong></p>
 
             <div class="tech-grid">
                 <div class="tech-card">
@@ -949,7 +931,8 @@
                     <div class="tech-justification">
                         <strong>Justificación:</strong> Permite aplicar buenas prácticas de gestión ágil y mantener control del progreso del desarrollo.
                     </div>
-                    <a href="https://estebanvarelaumb.atlassian.net/jira/software/projects/EN/boards/102?jql=assignee+%3D+empty&atlOrigin=eyJpIjoiMDMxYmY3YWJhZjNlNGUwNmJhNzJlZjNhN2RkNDM4NjUiLCJwIjoiaiJ9" target="_blank" class="btn btn-small">Ver Proyecto en Jira</a>
+                    <p style="margin-top: 1rem;"><strong>Enlace del proyecto:</strong></p>
+                    <a href="https://estebanvarelaumb.atlassian.net/jira/software/projects/EN/boards/102?atlOrigin=eyJpIjoiNzA4OTM1M2VjZDI4NDVjMGEwYzZhYmQwM2ViNDk4MDkiLCJwIjoiaiJ9" target="_blank" class="btn btn-small">Ver Proyecto en Jira</a>
                 </div>
 
                 <div class="tech-card">
@@ -967,6 +950,7 @@
                     <div class="tech-justification">
                         <strong>Justificación:</strong> Garantiza trazabilidad de cambios, organización del desarrollo y seguridad del código.
                     </div>
+                    <p style="margin-top: 1rem;"><strong>Enlace del repositorio:</strong></p>
                     <a href="https://github.com/Estteban-xc/ERP_Novatek" target="_blank" class="btn btn-small">Ver Repositorio</a>
                 </div>
             </div>
@@ -980,22 +964,22 @@
             <div class="team-grid">
                 <div class="team-card">
                     <div class="team-avatar">👨‍💻</div>
-                    <h3>Johan González</h3>
+                    <h3>Johan González Beltran</h3>
                     <p class="team-role">Desarrollador</p>
                 </div>
                 <div class="team-card">
                     <div class="team-avatar">👨‍💻</div>
-                    <h3>Samuel Pardo</h3>
+                    <h3>Samuel Nieto Pardo</h3>
                     <p class="team-role">Desarrollador</p>
                 </div>
                 <div class="team-card">
                     <div class="team-avatar">👨‍💻</div>
-                    <h3>Esteban Varela</h3>
+                    <h3>Mauricio Esteban Varela Cañon</h3>
                     <p class="team-role">Desarrollador</p>
                 </div>
                 <div class="team-card">
                     <div class="team-avatar">👨‍💻</div>
-                    <h3>Nelson Martínez</h3>
+                    <h3>Nelson Julián Martínez Bedoya</h3>
                     <p class="team-role">Desarrollador</p>
                 </div>
             </div>
@@ -1017,7 +1001,7 @@
                 </div>
                 <div class="footer-links">
                     <a href="https://github.com/Estteban-xc/ERP_Novatek" target="_blank">GitHub</a>
-                    <a href="https://estebanvarelaumb.atlassian.net/jira/software/projects/EN/boards/102?jql=assignee+%3D+empty&atlOrigin=eyJpIjoiMDMxYmY3YWJhZjNlNGUwNmJhNzJlZjNhN2RkNDM4NjUiLCJwIjoiaiJ9" target="_blank">Jira</a>
+                    <a href="https://estebanvarelaumb.atlassian.net/jira/software/projects/EN/boards/102?atlOrigin=eyJpIjoiNzA4OTM1M2VjZDI4NDVjMGEwYzZhYmQwM2ViNDk4MDkiLCJwIjoiaiJ9" target="_blank">Jira</a>
                 </div>
             </div>
             <p class="footer-copyright">Universidad Manuela Beltrán - Arquitectura del Software - Febrero 2026</p>
