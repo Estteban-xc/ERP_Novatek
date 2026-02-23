@@ -1,6 +1,7 @@
 # Árbol de Descomposición Funcional
 ## Módulo: Gestión de Inventario
 
+```text
 Gestión de Inventario
 │
 ├── Gestión de Productos
@@ -24,3 +25,4 @@ Gestión de Inventario
     ├── Reporte de productos disponibles
     ├── Reporte de productos agotados
     └── Reporte general de inventario
+```
