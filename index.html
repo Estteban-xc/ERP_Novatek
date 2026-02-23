@@ -21,6 +21,7 @@
                     <li><a href="#problema">Problema</a></li>
                     <li><a href="#solucion">Solución</a></li>
                     <li><a href="#antecedentes">Requerimientos</a></li>
+                    <li><a href="#sprint0">Sprint 0</a></li>
                     <li><a href="#tecnologias">Tecnologías</a></li>
                     <li><a href="#equipo">Equipo</a></li>
                 </ul>
@@ -828,6 +829,906 @@
                         <li>Mantenimiento futuro.</li>
                     </ul>
                     <p class="restriction-note">Si se desea aumentar el alcance (más módulos, integración web, versión móvil), el costo del proyecto aumentará proporcionalmente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPRINT 0 -->
+    <section id="sprint0" class="section">
+        <div class="container">
+            <h2 class="section-title">SPRINT 0 - Planning</h2>
+            <p class="intro-text">Documentación completa de la planificación inicial del proyecto ERP, incluyendo Product Backlog, Definition of Done, Sprint Backlog, estimaciones y organización del equipo.</p>
+
+            <!-- 1. Product Backlog -->
+            <div class="sprint-section">
+                <h3 class="subsection-title">1. Product Backlog</h3>
+                
+                <h4>1.1 Descripción</h4>
+                <p>El Product Backlog corresponde a la lista ordenada de funcionalidades y requisitos del sistema ERP para la tienda especializada en productos Apple (Novatek). Estas funcionalidades se definieron a partir de los requisitos funcionales establecidos en la Guía 1, organizados en módulos como Inventario, Ventas, Clientes, Proveedores, Empleados y Reportes.</p>
+                <p>El backlog se prioriza con el objetivo de identificar las funcionalidades más críticas para el funcionamiento inicial del sistema y planificar su desarrollo en los primeros sprints.</p>
+
+                <h4>1.2 Métodos de priorización utilizados</h4>
+                <p>Para cumplir con los lineamientos de la guía, se aplicaron dos métodos de priorización:</p>
+                
+                <div class="priority-methods">
+                    <div class="priority-card">
+                        <h5>1. Prioridad funcional (Alta / Media / Baja)</h5>
+                        <p>Indica el orden general en el que las funcionalidades deberían desarrollarse según su importancia para el funcionamiento básico del ERP.</p>
+                        <ul>
+                            <li><strong>Alta:</strong> Funcionalidades esenciales para operar el sistema (inventario, ventas, facturación).</li>
+                            <li><strong>Media:</strong> Funcionalidades importantes, pero no críticas para el primer funcionamiento.</li>
+                            <li><strong>Baja:</strong> Funcionalidades complementarias o analíticas que pueden implementarse posteriormente.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="priority-card">
+                        <h5>2. Valor de negocio (escala 1–5)</h5>
+                        <p>Mide el impacto de cada funcionalidad en la operación y beneficio del negocio.</p>
+                        <ul>
+                            <li><strong>5:</strong> Crítico para la operación del negocio.</li>
+                            <li><strong>4:</strong> Muy importante para eficiencia y control.</li>
+                            <li><strong>3:</strong> Útil para gestión administrativa.</li>
+                            <li><strong>2:</strong> Apoyo a análisis o mejoras.</li>
+                            <li><strong>1:</strong> Bajo impacto inmediato.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>1.3 Product Backlog priorizado</h4>
+                <div class="table-responsive">
+                    <table class="backlog-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Historia de Usuario</th>
+                                <th>Módulo</th>
+                                <th>Prioridad</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PB01</td>
+                                <td>Como administrador, quiero registrar productos con modelo, capacidad, color y precio, para que el inventario esté correctamente identificado.</td>
+                                <td>Inventario</td>
+                                <td class="positive">Alta</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>PB02</td>
+                                <td>Como administrador, quiero registrar el número de serie e IMEI de cada dispositivo, para garantizar la trazabilidad y control individual.</td>
+                                <td>Inventario</td>
+                                <td class="positive">Alta</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>PB03</td>
+                                <td>Como vendedor, quiero registrar ventas asociando producto e IMEI, para que quede trazabilidad del equipo vendido.</td>
+                                <td>Ventas</td>
+                                <td class="positive">Alta</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>PB04</td>
+                                <td>Como vendedor, quiero generar facturas automáticas, para que el proceso sea rápido y sin errores manuales.</td>
+                                <td>Ventas</td>
+                                <td class="positive">Alta</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>PB05</td>
+                                <td>Como vendedor, quiero asociar la venta a un cliente registrado, para guardar su historial de compras.</td>
+                                <td>Ventas</td>
+                                <td class="positive">Alta</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>PB06</td>
+                                <td>Como administrador, quiero visualizar el stock disponible en tiempo real, para evitar faltantes o sobre inventario.</td>
+                                <td>Inventario</td>
+                                <td class="positive">Alta</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>PB07</td>
+                                <td>Como vendedor, quiero que al registrar una venta el sistema descuente automáticamente el producto vendido, para mantener actualizado el inventario.</td>
+                                <td>Inventario</td>
+                                <td class="positive">Alta</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>PB08</td>
+                                <td>Como vendedor, quiero registrar diferentes métodos de pago (efectivo, tarjeta, transferencia), para llevar control financiero adecuado.</td>
+                                <td>Ventas</td>
+                                <td class="positive">Alta</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>PB09</td>
+                                <td>Como vendedor, quiero registrar datos del cliente (nombre, identificación, teléfono, correo), para poder contactarlo posteriormente.</td>
+                                <td>Clientes</td>
+                                <td class="neutral">Media</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>PB10</td>
+                                <td>Como administrador, quiero recibir alertas de stock mínimo, para realizar pedidos a tiempo.</td>
+                                <td>Inventario</td>
+                                <td class="neutral">Media</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>PB11</td>
+                                <td>Como empleado de bodega, quiero registrar entradas de mercancía, para que el sistema actualice automáticamente el inventario.</td>
+                                <td>Inventario</td>
+                                <td class="neutral">Media</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>PB12</td>
+                                <td>Como administrador, quiero consultar el historial de compras por cliente, para analizar su comportamiento.</td>
+                                <td>Clientes</td>
+                                <td class="neutral">Media</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>PB13</td>
+                                <td>Como empleado de soporte, quiero consultar el IMEI vendido a un cliente, para validar la garantía del equipo.</td>
+                                <td>Clientes</td>
+                                <td class="neutral">Media</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>PB14</td>
+                                <td>Como administrador, quiero registrar proveedores con sus datos de contacto, para gestionar órdenes de compra.</td>
+                                <td>Proveedores</td>
+                                <td class="neutral">Media</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>PB15</td>
+                                <td>Como administrador, quiero generar órdenes de compra digitales, para que el proceso sea organizado y trazable.</td>
+                                <td>Proveedores</td>
+                                <td class="neutral">Media</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>PB16</td>
+                                <td>Como administrador, quiero registrar pagos a proveedores, para controlar cuentas por pagar.</td>
+                                <td>Proveedores</td>
+                                <td class="neutral">Media</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>PB17</td>
+                                <td>Como administrador, quiero asignar roles y permisos a los usuarios, para que cada empleado solo acceda a la información correspondiente.</td>
+                                <td>Empleados</td>
+                                <td class="neutral">Media</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>PB18</td>
+                                <td>Como gerente, quiero visualizar ventas por vendedor, para evaluar el rendimiento del equipo.</td>
+                                <td>Empleados</td>
+                                <td class="negative">Baja</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>PB19</td>
+                                <td>Como gerente, quiero generar reportes diarios, mensuales y anuales, para analizar el comportamiento del negocio.</td>
+                                <td>Reportes</td>
+                                <td class="negative">Baja</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>PB20</td>
+                                <td>Como gerente, quiero visualizar ingresos, egresos y márgenes de ganancia, para tomar decisiones estratégicas.</td>
+                                <td>Reportes</td>
+                                <td class="negative">Baja</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 2. Definition of Done -->
+            <div class="sprint-section">
+                <h3 class="subsection-title">2. Definition of Done (DoD)</h3>
+                
+                <h4>2.1 Descripción</h4>
+                <p>El Definition of Done establece los criterios que debe cumplir cada historia de usuario para considerarse finalizada dentro del proyecto ERP. Este conjunto de condiciones permite garantizar calidad, consistencia en el desarrollo y un entendimiento común entre todos los integrantes del equipo sobre cuándo una funcionalidad está realmente terminada.</p>
+
+                <h4>2.2 Definition of Done del proyecto</h4>
+                <p>Una historia de usuario se considerará <strong>Done</strong> cuando cumpla con los siguientes criterios:</p>
+                
+                <div class="dod-grid">
+                    <div class="dod-card">
+                        <h5>✓ Implementación completa</h5>
+                        <p>La funcionalidad solicitada está desarrollada completamente según la historia de usuario.</p>
+                    </div>
+                    <div class="dod-card">
+                        <h5>✓ Base de datos funcional</h5>
+                        <p>Las tablas, relaciones y consultas necesarias están creadas y funcionando correctamente.</p>
+                    </div>
+                    <div class="dod-card">
+                        <h5>✓ Validaciones implementadas</h5>
+                        <p>El sistema valida campos obligatorios, formatos y restricciones necesarias (IMEI único, datos requeridos, valores válidos).</p>
+                    </div>
+                    <div class="dod-card">
+                        <h5>✓ Pruebas realizadas</h5>
+                        <p>La funcionalidad fue probada con datos válidos e inválidos, verificando que cumple con los criterios de aceptación.</p>
+                    </div>
+                    <div class="dod-card">
+                        <h5>✓ Integración correcta</h5>
+                        <p>La funcionalidad se integra correctamente con el resto del sistema sin afectar otras partes ya desarrolladas.</p>
+                    </div>
+                    <div class="dod-card">
+                        <h5>✓ Interfaz funcional</h5>
+                        <p>Las pantallas o formularios asociados permiten ejecutar la funcionalidad de manera correcta y comprensible.</p>
+                    </div>
+                    <div class="dod-card">
+                        <h5>✓ Código organizado</h5>
+                        <p>El código se encuentra estructurado, legible y siguiendo las convenciones definidas por el equipo.</p>
+                    </div>
+                    <div class="dod-card">
+                        <h5>✓ Subido al repositorio</h5>
+                        <p>Los cambios están cargados en el repositorio del proyecto y disponibles para el equipo.</p>
+                    </div>
+                    <div class="dod-card">
+                        <h5>✓ Documentación actualizada</h5>
+                        <p>Se actualiza la documentación necesaria (historias, comentarios, cambios o diagramas si aplica).</p>
+                    </div>
+                </div>
+
+                <h4>2.3 Importancia del Definition of Done</h4>
+                <p>El Definition of Done permite asegurar que cada incremento del sistema ERP cumpla estándares mínimos de calidad antes de considerarse terminado. Esto facilita la planificación de los sprints, reduce retrabajos y mejora la coordinación del equipo durante el desarrollo del proyecto.</p>
+            </div>
+
+            <!-- 3. Sprint Backlog -->
+            <div class="sprint-section">
+                <h3 class="subsection-title">3. Sprint Backlog – Sprint 0</h3>
+                
+                <h4>3.1 Selección del Sprint</h4>
+                <p>Para el primer sprint se seleccionaron historias fundamentales que permiten establecer el funcionamiento básico del sistema ERP: gestión inicial de inventario, registro de clientes y proceso básico de ventas. Estas funcionalidades representan el núcleo operativo del sistema y permiten validar el flujo principal del negocio.</p>
+
+                <h4>3.2 Historias seleccionadas y priorización</h4>
+                <ul class="sprint-stories-list">
+                    <li>Registrar productos con características básicas</li>
+                    <li>Registrar número de serie e IMEI por dispositivo</li>
+                    <li>Registrar clientes</li>
+                    <li>Registrar ventas asociando producto, IMEI y cliente</li>
+                </ul>
+
+                <h4>3.3 Especificación detallada de historias</h4>
+                
+                <!-- Historia 1 -->
+                <div class="user-story-detail">
+                    <h5>Historia 1: Registro de productos</h5>
+                    <div class="story-content">
+                        <p class="story-text"><strong>Historia de usuario:</strong> Como administrador, quiero registrar productos con modelo, capacidad, color y precio, para que el inventario esté correctamente identificado.</p>
+                        <p><strong>Prioridad en el Sprint:</strong> <span class="badge-high">Alta</span></p>
+                        
+                        <h6>Criterios de aceptación:</h6>
+                        <ul>
+                            <li>El sistema debe permitir ingresar modelo del producto.</li>
+                            <li>Debe permitir ingresar capacidad del dispositivo.</li>
+                            <li>Debe permitir ingresar color.</li>
+                            <li>Debe permitir registrar precio válido mayor a cero.</li>
+                            <li>El producto debe guardarse correctamente en la base de datos.</li>
+                            <li>El sistema debe mostrar confirmación de registro exitoso.</li>
+                        </ul>
+                        
+                        <h6>Tareas:</h6>
+                        <ul>
+                            <li>Diseñar tabla de productos en la base de datos</li>
+                            <li>Crear formulario de registro de productos</li>
+                            <li>Programar lógica de guardado</li>
+                            <li>Implementar validaciones de campos</li>
+                            <li>Probar registro con datos válidos e inválidos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Historia 2 -->
+                <div class="user-story-detail">
+                    <h5>Historia 2: Registro de IMEI y número de serie</h5>
+                    <div class="story-content">
+                        <p class="story-text"><strong>Historia de usuario:</strong> Como administrador, quiero registrar el número de serie e IMEI de cada dispositivo, para garantizar la trazabilidad y control individual de los equipos.</p>
+                        <p><strong>Prioridad en el Sprint:</strong> <span class="badge-high">Alta</span></p>
+                        
+                        <h6>Criterios de aceptación:</h6>
+                        <ul>
+                            <li>El sistema debe permitir ingresar IMEI del dispositivo.</li>
+                            <li>El IMEI no debe permitir duplicados.</li>
+                            <li>Debe permitir registrar número de serie.</li>
+                            <li>Cada IMEI debe asociarse a un producto existente.</li>
+                            <li>El registro debe guardarse correctamente en la base de datos.</li>
+                            <li>El sistema debe mostrar mensaje de éxito o error.</li>
+                        </ul>
+                        
+                        <h6>Tareas:</h6>
+                        <ul>
+                            <li>Diseñar tabla para dispositivos/IMEI</li>
+                            <li>Crear relación entre dispositivo y producto</li>
+                            <li>Crear formulario de registro de IMEI</li>
+                            <li>Implementar validación de IMEI único</li>
+                            <li>Probar asociación con productos existentes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Historia 3 -->
+                <div class="user-story-detail">
+                    <h5>Historia 3: Registro de clientes</h5>
+                    <div class="story-content">
+                        <p class="story-text"><strong>Historia de usuario:</strong> Como vendedor, quiero registrar datos del cliente (nombre, identificación, teléfono, correo), para poder contactarlo posteriormente.</p>
+                        <p><strong>Prioridad en el Sprint:</strong> <span class="badge-high">Alta</span></p>
+                        
+                        <h6>Criterios de aceptación:</h6>
+                        <ul>
+                            <li>El sistema debe permitir ingresar nombre del cliente.</li>
+                            <li>Debe permitir registrar identificación única.</li>
+                            <li>Debe permitir registrar teléfono.</li>
+                            <li>Debe permitir registrar correo electrónico válido.</li>
+                            <li>El cliente debe guardarse correctamente en la base de datos.</li>
+                            <li>El sistema debe confirmar el registro exitoso.</li>
+                        </ul>
+                        
+                        <h6>Tareas:</h6>
+                        <ul>
+                            <li>Diseñar tabla de clientes</li>
+                            <li>Crear formulario de registro de clientes</li>
+                            <li>Implementar validaciones de campos obligatorios</li>
+                            <li>Programar guardado en base de datos</li>
+                            <li>Probar registro con distintos datos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Historia 4 -->
+                <div class="user-story-detail">
+                    <h5>Historia 4: Registro de ventas</h5>
+                    <div class="story-content">
+                        <p class="story-text"><strong>Historia de usuario:</strong> Como vendedor, quiero registrar ventas asociando producto, IMEI y cliente, para mantener trazabilidad del equipo vendido.</p>
+                        <p><strong>Prioridad en el Sprint:</strong> <span class="badge-very-high">Muy Alta</span></p>
+                        
+                        <h6>Criterios de aceptación:</h6>
+                        <ul>
+                            <li>El sistema debe permitir seleccionar un cliente registrado.</li>
+                            <li>Debe permitir seleccionar un producto disponible.</li>
+                            <li>Debe permitir seleccionar el IMEI específico vendido.</li>
+                            <li>El sistema debe descontar automáticamente el producto del inventario.</li>
+                            <li>La venta debe guardarse correctamente en la base de datos.</li>
+                            <li>El sistema debe mostrar confirmación de venta exitosa.</li>
+                        </ul>
+                        
+                        <h6>Tareas:</h6>
+                        <ul>
+                            <li>Diseñar tabla de ventas</li>
+                            <li>Crear formulario de registro de ventas</li>
+                            <li>Implementar selección de cliente y producto</li>
+                            <li>Programar descuento automático del inventario</li>
+                            <li>Guardar transacción en base de datos</li>
+                            <li>Probar flujo completo de venta</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>3.4 Justificación del Sprint</h4>
+                <p>Las historias seleccionadas permiten construir un primer incremento funcional del ERP, habilitando el registro de productos, identificación individual mediante IMEI, registro de clientes y realización de ventas básicas. Este conjunto de funcionalidades establece el flujo principal del negocio y sirve como base para sprints posteriores donde se integrarán facturación avanzada, reportes y gestión administrativa.</p>
+            </div>
+
+            <!-- 4. Planning Poker -->
+            <div class="sprint-section">
+                <h3 class="subsection-title">4. Estimación de esfuerzo mediante Planning Poker</h3>
+                
+                <h4>4.1 Método de estimación</h4>
+                <p>Para estimar el esfuerzo requerido en cada historia de usuario del Sprint 0, el equipo aplicó la técnica Planning Poker, la cual permite evaluar la complejidad relativa de las historias en lugar de asignar tiempos exactos en horas.</p>
+                <p>La estimación se realizó de manera conjunta por todos los integrantes del grupo, analizando cada historia, discutiendo su complejidad técnica, dependencias, validaciones necesarias e impacto en el sistema.</p>
+                
+                <div class="poker-scale">
+                    <h5>Escala utilizada (Fibonacci):</h5>
+                    <ul>
+                        <li><strong>1–2 puntos:</strong> muy baja complejidad</li>
+                        <li><strong>3 puntos:</strong> baja complejidad</li>
+                        <li><strong>5 puntos:</strong> complejidad media</li>
+                        <li><strong>8 puntos:</strong> alta complejidad</li>
+                        <li><strong>13 puntos o más:</strong> muy alta complejidad</li>
+                    </ul>
+                </div>
+
+                <h4>4.2 Estimación de historias del Sprint 0</h4>
+                <div class="table-responsive">
+                    <table class="estimation-table">
+                        <thead>
+                            <tr>
+                                <th>Historia de usuario</th>
+                                <th>Justificación de complejidad</th>
+                                <th>Story Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Registrar productos</td>
+                                <td>Requiere formulario, almacenamiento en base de datos y validaciones de campos y precio</td>
+                                <td><span class="story-points">5</span></td>
+                            </tr>
+                            <tr>
+                                <td>Registrar IMEI y número de serie</td>
+                                <td>Requiere relación con producto, validación de IMEI único y control individual por dispositivo</td>
+                                <td><span class="story-points">8</span></td>
+                            </tr>
+                            <tr>
+                                <td>Registrar clientes</td>
+                                <td>Requiere formulario básico, validación de identificación y almacenamiento de datos</td>
+                                <td><span class="story-points">3</span></td>
+                            </tr>
+                            <tr>
+                                <td>Registrar ventas</td>
+                                <td>Implica selección de cliente, producto e IMEI, actualización automática del inventario y registro de la transacción</td>
+                                <td><span class="story-points">8</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>4.3 Resultado de la estimación</h4>
+                <div class="estimation-result">
+                    <p>A partir del proceso de Planning Poker realizado por el equipo, se identificó que las historias con mayor complejidad en el Sprint 0 son el registro de dispositivos con IMEI y el registro de ventas, debido a que requieren validaciones adicionales e integración entre varios módulos del sistema.</p>
+                    <p class="total-points">La suma total estimada del Sprint 0 es de <strong>24 Story Points</strong>, lo cual representa una carga de trabajo adecuada para el primer incremento funcional del sistema ERP.</p>
+                </div>
+            </div>
+
+            <!-- 5. Planificación de pruebas -->
+            <div class="sprint-section">
+                <h3 class="subsection-title">5. Planificación de pruebas del Sprint</h3>
+                
+                <h4>5.1 Objetivo</h4>
+                <p>La planificación de pruebas del Sprint tiene como propósito definir los casos de prueba necesarios para verificar que las historias de usuario seleccionadas cumplen correctamente su funcionalidad dentro del sistema ERP.</p>
+                <p>Para este Sprint 0 se estableció un mínimo de cinco casos de prueba por cada historia de usuario, con el fin de validar escenarios correctos, errores de entrada y comportamiento esperado del sistema.</p>
+
+                <h4>5.2 Casos de prueba por historia de usuario</h4>
+                
+                <!-- Pruebas Historia 1 -->
+                <div class="test-cases">
+                    <h5>Historia 1: Registrar productos</h5>
+                    <table class="test-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Caso de prueba</th>
+                                <th>Resultado esperado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CP1</td>
+                                <td>Registrar producto con todos los datos válidos</td>
+                                <td>El producto se guarda correctamente en el sistema</td>
+                            </tr>
+                            <tr>
+                                <td>CP2</td>
+                                <td>Intentar registrar producto con campos obligatorios vacíos</td>
+                                <td>El sistema muestra mensaje de error</td>
+                            </tr>
+                            <tr>
+                                <td>CP3</td>
+                                <td>Registrar producto con precio negativo</td>
+                                <td>El sistema rechaza el registro</td>
+                            </tr>
+                            <tr>
+                                <td>CP4</td>
+                                <td>Registrar producto con caracteres inválidos</td>
+                                <td>El sistema solicita corrección</td>
+                            </tr>
+                            <tr>
+                                <td>CP5</td>
+                                <td>Registrar producto correctamente</td>
+                                <td>El sistema muestra confirmación de registro exitoso</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pruebas Historia 2 -->
+                <div class="test-cases">
+                    <h5>Historia 2: Registrar IMEI y número de serie</h5>
+                    <table class="test-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Caso de prueba</th>
+                                <th>Resultado esperado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CP6</td>
+                                <td>Registrar IMEI válido asociado a un producto existente</td>
+                                <td>El dispositivo se guarda correctamente</td>
+                            </tr>
+                            <tr>
+                                <td>CP7</td>
+                                <td>Registrar IMEI duplicado</td>
+                                <td>El sistema muestra error y no permite guardar</td>
+                            </tr>
+                            <tr>
+                                <td>CP8</td>
+                                <td>Registrar IMEI con formato inválido</td>
+                                <td>El sistema rechaza el dato</td>
+                            </tr>
+                            <tr>
+                                <td>CP9</td>
+                                <td>Registrar IMEI sin seleccionar producto</td>
+                                <td>El sistema solicita producto obligatorio</td>
+                            </tr>
+                            <tr>
+                                <td>CP10</td>
+                                <td>Registrar IMEI correctamente</td>
+                                <td>El sistema muestra mensaje de éxito</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pruebas Historia 3 -->
+                <div class="test-cases">
+                    <h5>Historia 3: Registrar clientes</h5>
+                    <table class="test-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Caso de prueba</th>
+                                <th>Resultado esperado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CP11</td>
+                                <td>Registrar cliente con datos válidos</td>
+                                <td>El cliente se guarda correctamente</td>
+                            </tr>
+                            <tr>
+                                <td>CP12</td>
+                                <td>Registrar cliente con identificación duplicada</td>
+                                <td>El sistema muestra error</td>
+                            </tr>
+                            <tr>
+                                <td>CP13</td>
+                                <td>Registrar cliente sin nombre</td>
+                                <td>El sistema solicita completar el campo</td>
+                            </tr>
+                            <tr>
+                                <td>CP14</td>
+                                <td>Registrar cliente con correo inválido</td>
+                                <td>El sistema rechaza el correo</td>
+                            </tr>
+                            <tr>
+                                <td>CP15</td>
+                                <td>Registrar cliente correctamente</td>
+                                <td>El sistema confirma el registro exitoso</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pruebas Historia 4 -->
+                <div class="test-cases">
+                    <h5>Historia 4: Registrar ventas</h5>
+                    <table class="test-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Caso de prueba</th>
+                                <th>Resultado esperado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CP16</td>
+                                <td>Registrar venta con cliente, producto e IMEI válidos</td>
+                                <td>La venta se guarda correctamente</td>
+                            </tr>
+                            <tr>
+                                <td>CP17</td>
+                                <td>Registrar venta sin seleccionar cliente</td>
+                                <td>El sistema solicita cliente obligatorio</td>
+                            </tr>
+                            <tr>
+                                <td>CP18</td>
+                                <td>Registrar venta con IMEI no disponible</td>
+                                <td>El sistema rechaza la operación</td>
+                            </tr>
+                            <tr>
+                                <td>CP19</td>
+                                <td>Registrar venta válida</td>
+                                <td>El sistema descuenta el producto del inventario</td>
+                            </tr>
+                            <tr>
+                                <td>CP20</td>
+                                <td>Registrar venta exitosa</td>
+                                <td>El sistema muestra confirmación de venta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>5.3 Observación</h4>
+                <p>Estos casos de prueba servirán como base para validar las funcionalidades desarrolladas durante el Sprint 0 y permitirán detectar errores de manera temprana, garantizando que cada historia cumpla con los requisitos definidos.</p>
+            </div>
+
+            <!-- 6. Organización del equipo -->
+            <div class="sprint-section">
+                <h3 class="subsection-title">6. Organización del equipo y estrategias de trabajo</h3>
+                
+                <h4>6.1 Descripción</h4>
+                <p>Antes de iniciar el desarrollo del proyecto ERP, el equipo identificó las fortalezas y aspectos a mejorar de sus integrantes y definió responsables para los aspectos técnicos, organizacionales y de aseguramiento de calidad.</p>
+                <p>Adicionalmente, al contar con cuatro integrantes, se asignó un rol de apoyo orientado a la documentación y seguimiento del proyecto.</p>
+
+                <h4>6.2 Estrategias y responsables</h4>
+                <div class="table-responsive">
+                    <table class="team-roles-table">
+                        <thead>
+                            <tr>
+                                <th>Área</th>
+                                <th>Estrategias</th>
+                                <th>Encargado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Aspectos técnicos</strong></td>
+                                <td>Definir la estructura del sistema, coordinar decisiones técnicas, revisar la calidad del código y apoyar la implementación de la base de datos y funcionalidades principales.</td>
+                                <td>Nelson Julián Martínez</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Comunicación</strong></td>
+                                <td>Coordinar reuniones del equipo, hacer seguimiento del avance, mantener actualizado el tablero de trabajo y facilitar la comunicación entre los integrantes.</td>
+                                <td>Johan González Beltran</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Aseguramiento de calidad</strong></td>
+                                <td>Verificar el cumplimiento del Definition of Done, ejecutar casos de prueba, validar funcionalidades desarrolladas y asegurar que el sistema cumpla los requisitos establecidos.</td>
+                                <td>Mauricio Esteban Varela Cañon</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Documentación y soporte</strong></td>
+                                <td>Elaborar y actualizar la documentación del proyecto, registrar avances del Sprint, apoyar en pruebas funcionales y colaborar en la integración de componentes del sistema.</td>
+                                <td>Samuel Nieto Pardo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>6.3 Importancia de la asignación de roles</h4>
+                <p>La definición de responsables y estrategias permite distribuir las tareas de manera clara, mejorar la organización del equipo y reducir riesgos durante el desarrollo del sistema. Esto facilita el cumplimiento de los objetivos del Sprint y contribuye al éxito del proyecto.</p>
+            </div>
+
+            <!-- 7. Planificación del Sprint -->
+            <div class="sprint-section">
+                <h3 class="subsection-title">7. Planificación del Sprint</h3>
+                
+                <h4>7.1 Descripción general</h4>
+                <p>El equipo definió un cronograma de trabajo para la ejecución del Sprint 0, comprendido entre el 23 de febrero y el 3 de marzo, periodo en el cual se realizará la planificación inicial del proyecto ERP, la organización del backlog, la asignación de roles, la estimación de historias de usuario y la configuración del repositorio del proyecto.</p>
+                <p>La planificación del Sprint fue organizada mediante Jira, donde se registraron las historias de usuario, subtareas, prioridades y seguimiento del trabajo del equipo.</p>
+
+                <h4>7.2 Cronograma del Sprint</h4>
+                <div class="table-responsive">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Actividad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>23 febrero</td>
+                                <td>Inicio del Sprint. Revisión del backlog y organización de historias de usuario.</td>
+                            </tr>
+                            <tr>
+                                <td>24 febrero</td>
+                                <td>Definición del Definition of Done y asignación de roles del equipo.</td>
+                            </tr>
+                            <tr>
+                                <td>25 febrero</td>
+                                <td>Estimación de historias mediante Planning Poker y organización del Sprint en Jira.</td>
+                            </tr>
+                            <tr>
+                                <td>26 febrero</td>
+                                <td>Configuración y organización del repositorio del proyecto en GitHub.</td>
+                            </tr>
+                            <tr>
+                                <td>27 febrero</td>
+                                <td>Creación de la estructura inicial del sistema y actualización de la página del proyecto.</td>
+                            </tr>
+                            <tr>
+                                <td>28 febrero</td>
+                                <td>Registro de documentación del Sprint y evidencias del trabajo realizado.</td>
+                            </tr>
+                            <tr>
+                                <td>1 marzo</td>
+                                <td>Revisión interna del Sprint y verificación de la organización del proyecto.</td>
+                            </tr>
+                            <tr>
+                                <td>2 marzo</td>
+                                <td>Ajustes finales y preparación de la entrega.</td>
+                            </tr>
+                            <tr>
+                                <td>3 marzo</td>
+                                <td>Cierre del Sprint y presentación del incremento del producto (Sprint Review).</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>7.3 Procesos de integración y pruebas</h4>
+                <p>Durante el Sprint se realizará la integración de la documentación, la planificación del proyecto y la estructura inicial del sistema dentro del repositorio, verificando que los archivos, carpetas y enlaces funcionen correctamente.</p>
+                <p>Asimismo, se ejecutarán pruebas básicas sobre la página publicada en GitHub Pages para comprobar su visualización, accesibilidad y correcto funcionamiento como evidencia del Sprint.</p>
+
+                <h4>7.4 Evidencia del progreso</h4>
+                <p>El seguimiento del Sprint se realiza mediante Jira, donde se controla el estado de las historias y tareas planificadas.</p>
+                <p>El progreso del proyecto se evidencia a través del repositorio del proyecto en GitHub, el cual contiene una carpeta específica denominada <strong>Docs/sprint-0</strong> donde se almacenan los documentos y evidencias del proceso de planificación, así como la estructura inicial del sistema y la página informativa del proyecto publicada mediante GitHub Pages.</p>
+            </div>
+
+            <!-- 8. Documentación de Diseño -->
+            <div class="sprint-section">
+                <h3 class="subsection-title">8. Documentación de Diseño y Planificación</h3>
+                
+                <h4>8.1 Descripción general</h4>
+                <p>La documentación relacionada con el diseño y planificación del sistema ERP fue organizada y registrada en Jira y en el repositorio del proyecto en GitHub, garantizando la trazabilidad de los requerimientos y la correcta estructuración del sistema.</p>
+                <p>Para el desarrollo del sistema se definieron módulos funcionales que permiten dividir el ERP en componentes organizados y escalables. Cada módulo cuenta con una épica (feature), al menos una historia de usuario con sus respectivos criterios de aceptación, un diagrama UML y un árbol de descomposición funcional.</p>
+
+                <h4>8.2 Organización por módulos</h4>
+                <p>El sistema ERP fue dividido en los siguientes módulos principales:</p>
+                <ul class="modules-list">
+                    <li>Gestión de Inventario</li>
+                    <li>Gestión de Ventas</li>
+                    <li>Gestión de Clientes</li>
+                    <li>Gestión de Usuarios y Roles</li>
+                </ul>
+                <p>Para cada módulo se diseñó:</p>
+                <ul>
+                    <li>Una épica registrada en Jira</li>
+                    <li>Una historia de usuario con criterios de aceptación</li>
+                    <li>Un diagrama UML de casos de uso</li>
+                    <li>Un árbol de descomposición funcional</li>
+                </ul>
+
+                <h4>8.3 Historias de usuario y criterios de aceptación</h4>
+                <p>Cada módulo cuenta con historias de usuario estructuradas bajo el formato: <strong>Como [rol] quiero [funcionalidad] para [beneficio].</strong></p>
+                <p>Asimismo, cada historia incluye criterios de aceptación que permiten validar cuándo una funcionalidad se considera completada. Estos criterios se encuentran registrados dentro de la descripción de cada historia en Jira y definen las condiciones necesarias para su cumplimiento.</p>
+
+                <h4>8.4 Árboles de descomposición funcional</h4>
+                <p>Se diseñaron árboles de descomposición funcional para cada módulo del sistema, los cuales permiten desglosar cada componente en sus funcionalidades internas.</p>
+                
+                <div class="functional-trees">
+                    <!-- Árbol 1 -->
+                    <div class="tree-card">
+                        <h5>Módulo: Gestión de Inventario</h5>
+                        <pre class="tree-diagram">
+Gestión de Inventario
+│
+├── Gestión de Productos
+│   ├── Registrar producto
+│   ├── Editar producto
+│   ├── Eliminar producto
+│   └── Consultar producto
+│
+├── Control de Stock
+│   ├── Consultar stock disponible
+│   ├── Actualizar cantidad disponible
+│   ├── Validar disponibilidad antes de venta
+│   └── Generar alerta de bajo inventario
+│
+├── Gestión de IMEI
+│   ├── Registrar IMEI
+│   ├── Validar IMEI único
+│   └── Consultar IMEI
+│
+└── Reportes de Inventario
+    ├── Reporte de productos disponibles
+    ├── Reporte de productos agotados
+    └── Reporte general de inventario
+                        </pre>
+                    </div>
+
+                    <!-- Árbol 2 -->
+                    <div class="tree-card">
+                        <h5>Módulo: Gestión de Ventas</h5>
+                        <pre class="tree-diagram">
+Gestión de Ventas
+│
+├── Registro de Venta
+│   ├── Seleccionar cliente
+│   ├── Seleccionar producto
+│   ├── Validar disponibilidad
+│   ├── Calcular total
+│   └── Confirmar venta
+│
+├── Facturación
+│   ├── Generar factura
+│   ├── Asignar número de factura
+│   ├── Calcular impuestos
+│   └── Imprimir o exportar factura
+│
+├── Historial de Ventas
+│   ├── Consultar ventas por fecha
+│   ├── Consultar ventas por cliente
+│   └── Consultar ventas por producto
+│
+└── Reportes de Ventas
+    ├── Reporte diario
+    ├── Reporte mensual
+    └── Reporte anual
+                        </pre>
+                    </div>
+
+                    <!-- Árbol 3 -->
+                    <div class="tree-card">
+                        <h5>Módulo: Gestión de Clientes</h5>
+                        <pre class="tree-diagram">
+Gestión de Clientes
+│
+├── Registro de Cliente
+│   ├── Ingresar datos personales
+│   ├── Validar identificación
+│   └── Guardar cliente
+│
+├── Actualización de Datos
+│   ├── Editar información
+│   ├── Actualizar contacto
+│   └── Eliminar cliente
+│
+├── Consulta de Clientes
+│   ├── Buscar por nombre
+│   ├── Buscar por identificación
+│   └── Listar todos los clientes
+│
+└── Historial de Compras
+    ├── Ver compras realizadas
+    └── Consultar facturas asociadas
+                        </pre>
+                    </div>
+
+                    <!-- Árbol 4 -->
+                    <div class="tree-card">
+                        <h5>Módulo: Gestión de Usuarios y Roles</h5>
+                        <pre class="tree-diagram">
+Gestión de Usuarios
+│
+├── Registro de Usuario
+│   ├── Crear usuario
+│   ├── Asignar rol
+│   └── Definir credenciales
+│
+├── Autenticación
+│   ├── Iniciar sesión
+│   ├── Validar credenciales
+│   └── Cerrar sesión
+│
+├── Gestión de Roles
+│   ├── Crear rol
+│   ├── Editar permisos
+│   └── Eliminar rol
+│
+└── Seguridad
+    ├── Encriptar contraseñas
+    ├── Control de acceso por rol
+    └── Registro de actividad del usuario
+                        </pre>
+                    </div>
+                </div>
+
+                <h4>8.5 Evidencia en repositorio</h4>
+                <p>Toda la documentación de diseño se encuentra disponible en el repositorio del proyecto en GitHub, donde se almacenan los diagramas UML, los árboles funcionales y la estructura organizativa del sistema.</p>
+                <p>La carpeta <strong>docs</strong> contiene la documentación relacionada con el análisis y diseño, garantizando acceso y transparencia sobre la planificación del proyecto.</p>
+
+                <div class="project-links">
+                    <a href="https://estebanvarelaumb.atlassian.net/jira/software/projects/EN/boards/102/timeline?atlOrigin=eyJpIjoiMTU4MTM1MzE3ODIyNDg5M2EyMGU4MzlhYTI4M2E1MzAiLCJwIjoiaiJ9" target="_blank" class="btn btn-primary">Ver Proyecto en Jira</a>
+                    <a href="https://github.com/Estteban-xc/ERP_Novatek/tree/main" target="_blank" class="btn btn-secondary">Ver Repositorio en GitHub</a>
                 </div>
             </div>
         </div>
