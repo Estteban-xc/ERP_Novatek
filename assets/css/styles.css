@@ -919,6 +919,430 @@ header {
     color: var(--azul-oscuro);
 }
 
+/* ===== SPRINT 0 SECTION ===== */
+.sprint-section {
+    background-color: var(--blanco);
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 3rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.sprint-section h4 {
+    color: var(--azul-medio);
+    margin: 2rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.sprint-section h5 {
+    color: var(--azul-oscuro);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.2rem;
+}
+
+.sprint-section h6 {
+    color: var(--gris-espacial);
+    margin: 1rem 0 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Priority Methods */
+.priority-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.priority-card {
+    background-color: var(--blanco-humo);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid var(--acento-azul);
+}
+
+.priority-card h5 {
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+}
+
+.priority-card ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.priority-card ul li {
+    margin: 0.5rem 0;
+    color: var(--gris-espacial);
+}
+
+/* Backlog Table */
+.backlog-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.backlog-table thead {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+.backlog-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.backlog-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.backlog-table tbody tr:hover {
+    background-color: var(--blanco-humo);
+}
+
+/* DOD Grid */
+.dod-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.dod-card {
+    background-color: var(--blanco-humo);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--acento-verde);
+}
+
+.dod-card h5 {
+    color: var(--azul-oscuro);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.dod-card p {
+    color: var(--gris-espacial);
+    line-height: 1.6;
+}
+
+/* Sprint Stories List */
+.sprint-stories-list {
+    background-color: var(--blanco-humo);
+    padding: 2rem;
+    border-radius: 10px;
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.sprint-stories-list li {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: var(--blanco);
+    border-radius: 5px;
+    border-left: 4px solid var(--acento-azul);
+}
+
+/* User Story Detail */
+.user-story-detail {
+    background-color: var(--blanco-humo);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    border-left: 5px solid var(--acento-azul);
+}
+
+.user-story-detail h5 {
+    color: var(--azul-oscuro);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.story-content {
+    padding: 1rem 0;
+}
+
+.story-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.badge-high {
+    background-color: var(--acento-rojo);
+    color: var(--blanco);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.badge-very-high {
+    background-color: #C0392B;
+    color: var(--blanco);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.story-content ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.story-content ul li {
+    margin: 0.5rem 0;
+    color: var(--gris-espacial);
+    line-height: 1.6;
+}
+
+/* Poker Scale */
+.poker-scale {
+    background-color: var(--blanco-humo);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.poker-scale h5 {
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+}
+
+.poker-scale ul {
+    list-style: none;
+    padding: 0;
+}
+
+.poker-scale ul li {
+    padding: 0.5rem 0;
+    color: var(--gris-espacial);
+}
+
+/* Estimation Table */
+.estimation-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.estimation-table thead {
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+}
+
+.estimation-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.estimation-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.story-points {
+    background-color: var(--acento-azul);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+}
+
+.estimation-result {
+    background-color: var(--blanco-humo);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    border-left: 5px solid var(--acento-verde);
+}
+
+.total-points {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: var(--azul-oscuro);
+}
+
+/* Test Cases */
+.test-cases {
+    margin: 2rem 0;
+}
+
+.test-cases h5 {
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--acento-azul);
+}
+
+.test-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1rem 0;
+}
+
+.test-table thead {
+    background-color: var(--gris-espacial);
+    color: var(--blanco);
+}
+
+.test-table th {
+    padding: 0.8rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.test-table td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.test-table tbody tr:hover {
+    background-color: var(--blanco-humo);
+}
+
+/* Team Roles Table */
+.team-roles-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.team-roles-table thead {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+}
+
+.team-roles-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.team-roles-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    line-height: 1.6;
+}
+
+.team-roles-table tbody tr:hover {
+    background-color: var(--blanco-humo);
+}
+
+/* Schedule Table */
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.schedule-table thead {
+    background-color: var(--azul-medio);
+    color: var(--blanco);
+}
+
+.schedule-table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.schedule-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: var(--blanco-humo);
+}
+
+/* Modules List */
+.modules-list {
+    background-color: var(--blanco-humo);
+    padding: 2rem;
+    border-radius: 10px;
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.modules-list li {
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    background-color: var(--blanco);
+    border-radius: 5px;
+    border-left: 4px solid var(--acento-azul);
+    font-weight: 600;
+    color: var(--azul-oscuro);
+}
+
+/* Functional Trees */
+.functional-trees {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.tree-card {
+    background-color: var(--blanco-humo);
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid var(--acento-verde);
+}
+
+.tree-card h5 {
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.tree-diagram {
+    background-color: var(--blanco);
+    padding: 1.5rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--gris-espacial);
+}
+
+/* Project Links */
+.project-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
 /* ===== FOOTER ===== */
 footer {
     background-color: var(--azul-oscuro);
@@ -1015,12 +1439,27 @@ footer {
     .nf-requirements-grid,
     .restrictions-grid,
     .tech-grid,
-    .team-grid {
+    .team-grid,
+    .priority-methods,
+    .dod-grid,
+    .functional-trees {
         grid-template-columns: 1fr;
     }
 
     .table-responsive {
         font-size: 0.9rem;
+    }
+
+    .sprint-section {
+        padding: 1.5rem;
+    }
+
+    .tree-diagram {
+        font-size: 0.75rem;
+    }
+
+    .project-links {
+        flex-direction: column;
     }
 
     .footer-content {
@@ -1047,5 +1486,12 @@ footer {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
-}
 
+    .sprint-section h4 {
+        font-size: 1.2rem;
+    }
+
+    .sprint-section h5 {
+        font-size: 1.1rem;
+    }
+}
